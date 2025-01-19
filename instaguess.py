@@ -16,13 +16,13 @@ def higher_or_lower():
             score += 1
             new_number = randint(0,len(data) - 1)
             random_user2 = [data[new_number]["name"], data[new_number]["follower_count"], data[new_number]["description"], data[new_number]["country"]]
-            print(f"You're right! Your score is {score}\n")
+            print(f"You're right! Your score is {score}")
         elif first_guess == "b" and random_user[1] < random_user2[1]:
             score += 1
             random_user = random_user2
             new_number = randint(0, len(data) - 1)
             random_user2 = [data[new_number]["name"], data[new_number]["follower_count"], data[new_number]["description"], data[new_number]["country"]]
-            print(f"You're right! Your score is {score}\n")
+            print(f"You're right! Your score is {score}")
         else:
                 game_start = False
     print(f"You lose. Your score is {score}")
