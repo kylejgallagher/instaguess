@@ -11,7 +11,7 @@ def higher_or_lower():
 
     while game_start:
         print(f"A:{random_user[0]}, a {random_user[2]} from {random_user[3]}\nB:{random_user2[0]}, a {random_user2[2]} from {random_user2[3]}")
-        first_guess = input("Which is higher? A or B? ").lower()
+        first_guess = input("Which has more followers? A or B? ").lower()
         if first_guess == "a" and random_user[1] > random_user2[1]:
             score += 1
             new_number = randint(0,len(data) - 1)
